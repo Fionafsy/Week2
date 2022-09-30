@@ -22,7 +22,8 @@ plastic_waste <- read_csv("data/plastic-waste.csv")
 *Remove this text, and add your answer for Exercise 1 here.*
 
 ```{r plastic-waste-continent}
-# remove this comment and add the code for Exercise 1 here
+plastic_waste %>%
++     filter(plastic_waste_per_cap > 3.5)
 ```
 
 ### Exercise 2
