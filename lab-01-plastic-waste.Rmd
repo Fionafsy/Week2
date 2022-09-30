@@ -44,8 +44,9 @@ ggplot(data = plastic_waste,
 *Remove this text, and add your answer for Exercise 4 here.*
 
 ```{r plastic-waste-violin}
-# remove this comment and add the code for Exercise 4 here
-```
+plastic_waste_edit <- plastic_waste %>% 
++     mutate(coastal_pop_prop = coastal_pop / total_pop) %>%
++     filter(plastic_waste_per_cap < 3)
 
 ### Exercise 5
 
