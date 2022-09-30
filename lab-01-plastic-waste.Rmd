@@ -29,7 +29,10 @@ plastic_waste %>%
 ### Exercise 2
 
 ```{r plastic-waste-density}
-# remove this comment and add the code for Exercise 2 here
+ggplot(data = plastic_waste, 
++        mapping = aes(x = continent, 
++                      y = plastic_waste_per_cap)) +
++     geom_point()
 ```
 
 ### Exercise 3
